@@ -1,0 +1,15 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name">Tech News</string>
+    <string name="no_internet">No Internet</string>
+    <string name="no_news">No News</string>
+    <string name="published" translatable="true">Published: <xliff:g id="date">%1$s</xliff:g></string>
+
+    <string name="settings_title" translatable="true">Settings</string>
+    <string name="settings_menu_item" translatable="true">Settings</string>
+
+    <!--Page Size Preference string [CHAR LIMIT=30]-->
+    <string name="settings_page_count_label">Page Count</string>
+    <string name="settings_page_count_key" translatable="false">min_page_count</string>
+    <string name="settings_page_count_default" translatable="false">10</string>
+
+</resources>
