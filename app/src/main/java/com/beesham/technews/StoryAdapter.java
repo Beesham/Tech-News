@@ -17,6 +17,7 @@ public class StoryAdapter extends ArrayAdapter<Story> {
     static class ViewHolder{
         TextView title;
         TextView publishedDate;
+        TextView contributors;
     }
 
     public StoryAdapter(Context context, ArrayList<Story> objects) {
@@ -34,6 +35,7 @@ public class StoryAdapter extends ArrayAdapter<Story> {
             viewHolder = new ViewHolder();
             viewHolder.title = (TextView) listItemView.findViewById(R.id.title_textview);
             viewHolder.publishedDate = (TextView) listItemView.findViewById(R.id.published_date_textview);
+            viewHolder.contributors = (TextView) listItemView.findViewById(R.id.contributors_textview);
 
             listItemView.setTag(viewHolder);
         }else{
@@ -44,6 +46,11 @@ public class StoryAdapter extends ArrayAdapter<Story> {
         if(story != null){
             viewHolder.title.setText(story.getmTitle());
             viewHolder.publishedDate.setText(getContext().getString(R.string.published, story.getmPubDate()));
+            viewHolder.contributors.setText(getContext().getString(R.string.contributors, story.getmContributor()));
+        }
+
+        if(story.getmContributor().length() == 0){
+            viewHolder.contributors.setVisibility(View.GONE);
         }
 
         return listItemView;

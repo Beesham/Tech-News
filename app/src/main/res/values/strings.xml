@@ -3,6 +3,7 @@
     <string name="no_internet">No Internet</string>
     <string name="no_news">No News</string>
     <string name="published" translatable="true">Published: <xliff:g id="date">%1$s</xliff:g></string>
+    <string name="contributors" translatable="true">Contributor(s): <xliff:g id="date">%1$s</xliff:g></string>
 
     <string name="settings_title" translatable="true">Settings</string>
     <string name="settings_menu_item" translatable="true">Settings</string>

@@ -59,7 +59,24 @@ public final class QueryUtils {
                 String pubDate = storyJson.getString("webPublicationDate");
                 String url = storyJson.getString("webUrl");
 
-                newsArrayList.add(new Story(title, url, decodeDate(pubDate)));
+                StringBuilder contributors = new StringBuilder();
+
+                JSONArray tags = storyJson.getJSONArray("tags");
+                if(tags.length() != 0){
+                    for(int j=0; j < tags.length(); j++){
+                        JSONObject tag = tags.getJSONObject(j);
+                        if(tag.getString("type").equals("contributor")){
+                            if(j == tags.length()-1){
+                                contributors.append(tag.getString("webTitle"));
+                            }
+                            else{
+                                contributors.append(tag.getString("webTitle") + ", ");
+                            }
+                        }
+                    }
+                }
+
+                newsArrayList.add(new Story(title, url, decodeDate(pubDate), contributors.toString()));
             }
 
         } catch (JSONException e) {

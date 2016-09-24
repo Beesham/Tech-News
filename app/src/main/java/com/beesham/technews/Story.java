@@ -7,11 +7,17 @@ public class Story {
     private String mTitle;
     private String mUrl;
     private String mPubDate;
+    private String mContributor;
 
-    public Story(String mTitle, String mUrl, String mPubDate) {
+    public Story(String mTitle, String mUrl, String mPubDate, String mContributor) {
         this.mTitle = mTitle;
         this.mUrl = mUrl;
         this.mPubDate = mPubDate;
+        this.mContributor = mContributor;
+    }
+
+    public String getmContributor() {
+        return mContributor;
     }
 
     public String getmUrl() {

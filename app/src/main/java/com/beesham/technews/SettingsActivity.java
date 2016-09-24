@@ -39,8 +39,5 @@ public class SettingsActivity extends AppCompatActivity {
             String preferenceString = sharedPreferences.getString(preference.getKey(), "");
             onPreferenceChange(preference, preferenceString);
         }
-
-
     }
-
 }

@@ -82,6 +82,7 @@ public class FeedActivity extends AppCompatActivity implements LoaderManager.Loa
         uriBuilder.appendQueryParameter("q","technology");
         uriBuilder.appendQueryParameter("format","json");
         uriBuilder.appendQueryParameter("page-size", pageCount);
+        uriBuilder.appendQueryParameter("show-tags", "contributor");
         uriBuilder.appendQueryParameter("api-key","test");
 
         return new StoryLoader(this, uriBuilder.toString());
