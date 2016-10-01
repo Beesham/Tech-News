@@ -3,7 +3,8 @@ Tech News
 
 This Android application queries the Guardian news API for articles on Technology.
 
-![screenshot sep 23 2016 3-07-48 pm](https://cloud.githubusercontent.com/assets/10713096/18798298/6a84abc8-8197-11e6-82a1-6d99340da29d.png)
+![screenshot oct 1 2016 11-47-09 am](https://cloud.githubusercontent.com/assets/10713096/19015159/85046c44-87c4-11e6-972f-cbbaca5eb4d1.png)
+
 
 Key Concepts applied
 --------------------
